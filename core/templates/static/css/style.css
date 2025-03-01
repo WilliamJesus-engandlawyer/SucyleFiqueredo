@@ -1,0 +1,8 @@
+.whatsapp-icon {
+    width: 50px; /* Tamanho normal */
+    transition: transform 0.3s ease-in-out; /* Suaviza o efeito */
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.2); /* Aumenta 20% quando passa o mouse */
+}   

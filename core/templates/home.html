@@ -1,6 +1,8 @@
+{% load static %} 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"><!-- Corrigido para Django -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escritório de Advocacia Trabalhista Sucyle Figueiredo</title>
@@ -102,6 +104,36 @@
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<title>Link WhatsApp</title>
+    <style>
+        .whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+        }
+        .whatsapp-icon {
+            width: 50px; /* Tamanho aumentado */
+            transition: transform 0.3s ease-in-out;
+        }
+        .whatsapp-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
+    <head>
+        <title>Link instagram</title>
+        <style>
+            .instagram-link {
+                display: inline-flex;
+                align-items: center;
+            }
+            .instagram-icon {
+                width: 50px; /* Tamanho aumentado */
+                transition: transform 0.3s ease-in-out;
+            }
+            .instagram-icon:hover {
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
 <body>
     <header>
         <h1>Escritório de Advocacia Trabalhista</h1>
@@ -110,11 +142,18 @@
     <nav>
         <a href="#sobre" aria-label="Ir para a seção Sobre">Sobre</a>
         <a href="#servicos" aria-label="Ir para a seção Serviços">Serviços</a>
-        <a href="#contato" aria-label="Ir para a seção Contato">Contato</a>
+        <a href="#contato" aria-label="Irs para a seção Contato">Contato</a>
     </nav>
     <section id="sobre">
-        <h2>Sobre o Escritório</h2>
+        <h2>Quem vai te atender?</h2>
         <p>O Escritório de Advocacia Trabalhista Sucyle Figueiredo é dedicado à defesa dos direitos dos trabalhadores e à representação de empresas em questões trabalhistas.</p>
+        <a href="https://wa.me/5511941250225" target="_blank" class="whatsapp-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+        <a href="https://www.instagram.com/advogada_sucyle_figueiredo/" target="_blank" class="instagram-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="instagram" class="instagram-icon">
+        </a>
+        
     </section>
     <section id="servicos">
         <h2>Nossos Serviços</h2>
