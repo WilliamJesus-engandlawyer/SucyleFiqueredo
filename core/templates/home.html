@@ -1,160 +1,187 @@
 {% load static %} 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}"><!-- Corrigido para Django -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escritório de Advocacia Trabalhista Sucyle Figueiredo</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #e0e0e0;
-            line-height: 1.6;
-        }
-        header {
-            position: relative;
-            background-image: url('https://i.imgur.com/PK46MU7.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #caa945;
-            text-align: center;
-            padding: 60px 0; /* Reduzi ainda mais o tamanho do cabeçalho */
-            height: 200px; /* Defini uma altura fixa menor */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-        }
-        header h1, header p {
-            position: relative;
-            z-index: 1;
-            margin: 0;
-        }
-        header h1 {
-            font-size: clamp(2.5rem, 5vw, 3rem); /* Responsivo */
-            font-family: 'Playfair Display', serif;
-            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.9),
-                         6px 6px 6px rgba(0, 0, 0, 0.7);
-        }
-        header p {
-            font-size: clamp(1.2rem, 4vw, 1.8rem); /* Responsivo */
-            font-family: 'Playfair Display', serif;
-            font-weight: bold;
-            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
-        }
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background-color: #1c1c1c;
-            text-align: center;
-            padding: 15px 0;
-            border-bottom: 2px solid #caa945;
-        }
-        nav a {
-            color: #caa945;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #ffffff;
-            border-bottom: 2px solid #caa945;
-            padding-bottom: 5px;
-        }
-        section {
-            padding: 40px;
-            background-color: #1e1e1e;
-            margin: 30px auto;
-            max-width: 900px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
-        }
-        section h2 {
-            color: #caa945;
-            border-bottom: 2px solid #caa945;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-family: 'Playfair Display', serif;
-        }
-        footer {
-            background-color: #1c1c1c;
-            color: #caa945;
-            text-align: center;
-            padding: 20px 0;
-            width: 100%;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<title>Link WhatsApp</title>
-    <style>
-        .whatsapp-link {
-            display: inline-flex;
-            align-items: center;
-        }
-        .whatsapp-icon {
-            width: 50px; /* Tamanho aumentado */
-            transition: transform 0.3s ease-in-out;
-        }
-        .whatsapp-icon:hover {
-            transform: scale(1.2);
-        }
-    </style>
     <head>
-        <title>Link instagram</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}"><!-- Corrigido para Django -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escritório de Advocacia Trabalhista Sucyle Figueiredo</title>
         <style>
-            .instagram-link {
-                display: inline-flex;
-                align-items: center;
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #121212;
+                color: #e0e0e0;
+                line-height: 1.6;
             }
-            .instagram-icon {
-                width: 50px; /* Tamanho aumentado */
+            header {
+                position: relative;
+                background-image: url('https://i.imgur.com/PK46MU7.jpeg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: #caa945;
+                text-align: center;
+                padding: 60px 0;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+            header::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.6);
+            }
+            header h1, header p {
+                position: relative;
+                z-index: 1;
+                margin: 0;
+            }
+            header h1 {
+                font-size: clamp(2.5rem, 5vw, 3rem);
+                font-family: 'Playfair Display', serif;
+                text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.9),
+                             6px 6px 6px rgba(0, 0, 0, 0.7);
+            }
+            header p {
+                font-size: clamp(1.2rem, 4vw, 1.8rem);
+                font-family: 'Playfair Display', serif;
+                font-weight: bold;
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+            }
+            nav {
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background-color: #1c1c1c;
+                text-align: center;
+                padding: 15px 0;
+                border-bottom: 2px solid #caa945;
+            }
+            nav a {
+                color: #caa945;
+                text-decoration: none;
+                margin: 0 20px;
+                font-weight: 600;
+                transition: color 0.3s ease;
+            }
+            nav a:hover {
+                color: #ffffff;
+                border-bottom: 2px solid #caa945;
+                padding-bottom: 5px;
+            }
+            section {
+                padding: 40px;
+                background-color: #1e1e1e;
+                margin: 30px auto;
+                max-width: 900px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+            }
+            section h2 {
+                color: #caa945;
+                border-bottom: 2px solid #caa945;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                font-family: 'Playfair Display', serif;
+            }
+            footer {
+                background-color: #1c1c1c;
+                color: #caa945;
+                text-align: center;
+                padding: 20px 0;
+                width: 100%;
+            }
+            .oab {
+                font-size: clamp(1rem, 3vw, 1.5rem);
+                font-family: 'Playfair Display', serif;
+                color: #caa945;
+                position: absolute;
+                bottom: 10px;
+                left: 20px; /* Alterado para alinhar à esquerda */
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+            }
+            
+            
+            .container {
+                display: flex;
+                flex-direction: column; /* Coloca o conteúdo em coluna */
+                align-items: center; /* Centraliza horizontalmente */
+            }
+            .content {
+                display: flex;
+                align-items: center; /* Alinha o texto e a imagem verticalmente */
+                gap: 20px; /* Espaçamento entre o texto e a imagem */
+                margin-bottom: 20px; /* Espaçamento abaixo do conteúdo */
+            }
+            .texto {
+                flex: 1; /* Ocupa o espaço restante */
+            }
+            .Sucy img {
+                max-width: 200px;
+                height: auto;
+                border-radius: 10px; /* Adiciona borda arredondada à imagem */
+            }
+            .social-icons {
+                display: flex;
+                justify-content: center; /* Centraliza os ícones */
+                gap: 20px; /* Espaçamento entre os ícones */
+            }
+            .whatsapp-icon, .instagram-icon {
+                width: 50px;
                 transition: transform 0.3s ease-in-out;
             }
-            .instagram-icon:hover {
+            .whatsapp-icon:hover, .instagram-icon:hover {
                 transform: scale(1.2);
             }
         </style>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     </head>
-<body>
-    <header>
-        <h1>Escritório de Advocacia Trabalhista</h1>
-        <p>Sucyle Figueiredo</p>
-    </header>
-    <nav>
-        <a href="#sobre" aria-label="Ir para a seção Sobre">Sobre</a>
-        <a href="#servicos" aria-label="Ir para a seção Serviços">Serviços</a>
-        <a href="#contato" aria-label="Irs para a seção Contato">Contato</a>
-    </nav>
-    <section id="sobre">
-        <h2>Quem vai te atender?</h2>
-        <p>O Escritório de Advocacia Trabalhista Sucyle Figueiredo é dedicado à defesa dos direitos dos trabalhadores e à representação de empresas em questões trabalhistas.</p>
-        <a href="https://wa.me/5511941250225" target="_blank" class="whatsapp-link">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
-        </a>
-        <a href="https://www.instagram.com/advogada_sucyle_figueiredo/" target="_blank" class="instagram-link">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="instagram" class="instagram-icon">
-        </a>
-        
+    <body>
+        <header>
+            <h1>Escritório de Advocacia Trabalhista</h1>
+            <p>Sucyle Figueiredo</p>
+            <small class="oab">OAB SP 526.628</small>
+        </header>
+        <nav>
+            <a href="#sobre" aria-label="Ir para a seção Sobre">Sobre</a>
+            <a href="#servicos" aria-label="Ir para a seção Serviços">Serviços</a>
+            <a href="#contato" aria-label="Ir para a seção Contato">Contato</a>
+        </nav>
+        <section id="Quem">
+            <div class="container">
+                <h2>Quem vai te atender?</h2> <!-- Título acima de tudo -->
+                <div class="content">
+                    <div class="texto">
+                        <p><strong>Dra. Sucyle Figueiredo</strong></p>
+                        <p> Advogada especialista em Direito do Trabalho, com experiência na área, atendendo demandas de empregados e prestando assessoria jurídica às empresas.<p>
+                    </div>
+                    <div class="Sucy">
+                        <img src="https://i.imgur.com/ameQxXG.jpeg" alt="Advogada Sucyle Figueiredo">
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://wa.me/5511941250225" target="_blank" class="whatsapp-link">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                    </a>
+                    <a href="https://www.instagram.com/advogada_sucyle_figueiredo/" target="_blank" class="instagram-link">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Instagram" class="instagram-icon">
+                    </a>
+                </div>
+            </div>
     </section>
+</section>
+<section id="sobre">
+
+</section>
     <section id="servicos">
         <h2>Nossos Serviços</h2>
         <ul>
